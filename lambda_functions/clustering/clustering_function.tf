@@ -5,6 +5,6 @@ resource "aws_lambda_function" "test_lambda" {
   image_uri     = data.local_file.test_lambda_uri_file.content
 }
 
-data "local_file" "test_lambda_uri_file" {
+data "local_file" "clustering_lambda_uri_file" {
   filename = "./lambda_function_uri/clustering_uri.txt"
 }
