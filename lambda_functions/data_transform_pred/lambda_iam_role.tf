@@ -1,5 +1,5 @@
 resource "aws_iam_role" "lambda_iam" {
-  name               = "lambda_iam_role"
+  name               = var.lambda_iam_role_name
   assume_role_policy = data.local_file.lambda_iam_role_file.content
 }
 
