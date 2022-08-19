@@ -5,6 +5,8 @@
 *.tfstate
 *.tfstate.*
 
+demotest.py
+
 # Crash log files
 crash.log
 
