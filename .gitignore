@@ -7,6 +7,8 @@
 
 demotest.py
 
+.terraform.lock.hcl
+
 # Crash log files
 crash.log
 
