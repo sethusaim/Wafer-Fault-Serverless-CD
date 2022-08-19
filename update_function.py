@@ -3,7 +3,7 @@ from os.path import join
 
 new_tag = environ["DOCKERTAG"]
 
-file_name = join("lambda_function_uri", environ["COMP_FILE"])
+file_name = join("lambda_function_manifests", environ["COMP_FILE"])
 
 def read_text():
     try:
