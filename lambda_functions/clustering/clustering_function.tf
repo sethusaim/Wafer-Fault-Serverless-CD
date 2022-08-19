@@ -1,4 +1,4 @@
-resource "aws_lambda_function" "test_lambda" {
+resource "aws_lambda_function" "clustering_lambda" {
   function_name = var.clustering_function_name
   role          = aws_iam_role.lambda_iam.arn
   package_type  = var.clustering_package_type
