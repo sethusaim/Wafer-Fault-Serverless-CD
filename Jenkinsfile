@@ -8,7 +8,7 @@ pipeline {
       }
     }
 
-    stage('Update component') {
+    stage('Update Lambda Function URI') {
       steps {
         script {
           catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
@@ -21,7 +21,7 @@ pipeline {
 
               sh 'git add .'
 
-              sh 'git commit -m "Updated component for ${REPO_NAME} repository with build number as ${DOCKERTAG}"'
+              sh 'git commit -m "Updated function uri for ${REPO_NAME} lambda function manifest with build number as ${DOCKERTAG}"'
 
               sh 'git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/Wafer-Fault-Serverless-CD.git'
 
