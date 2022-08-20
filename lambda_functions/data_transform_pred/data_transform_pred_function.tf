@@ -6,5 +6,5 @@ resource "aws_lambda_function" "data_transform_pred_lambda" {
 }
 
 data "local_file" "data_transform_pred_lambda_uri_file" {
-  filename = "./lambda_function_uri/data_transform_pred_uri.txt"
+  filename = "./lambda_function_manifests/wafer_data_transform_pred_uri.txt"
 }
