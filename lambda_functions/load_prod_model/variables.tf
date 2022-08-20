@@ -17,3 +17,13 @@ variable "load_prod_model_lambda_iam_role_arn" {
   default = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
   type = string
 }
+
+variable "load_prod_model_lambda_memory_size" {
+  default = 2048
+  type = number
+}
+
+variable "load_prod_model_lambda_timeout" {
+  default = 900
+  type = number
+}

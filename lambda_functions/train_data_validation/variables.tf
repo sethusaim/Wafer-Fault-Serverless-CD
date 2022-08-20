@@ -9,11 +9,21 @@ variable "train_data_validation_package_type" {
 }
 
 variable "train_data_validation_lambda_iam_role_name" {
-  default = "lambda_iam_role"
+  default = "train_data_validation_lambda_iam_role"
   type    = string
 }
 
 variable "train_data_validation_lambda_iam_role_arn" {
   default = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
-  type = string
+  type    = string
+}
+
+variable "train_data_validation_lambda_memory_size" {
+  default = 2048
+  type    = number
+}
+
+variable "train_data_validation_lambda_timeout" {
+  default = 900
+  type    = number
 }

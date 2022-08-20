@@ -17,3 +17,13 @@ variable "data_transform_train_lambda_iam_role_arn" {
   default = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
   type = string
 }
+
+variable "data_transform_train_lambda_memory_size" {
+  default = 2048
+  type = number
+}
+
+variable "data_transform_train_lambda_timeout" {
+  default = 900
+  type = number
+}

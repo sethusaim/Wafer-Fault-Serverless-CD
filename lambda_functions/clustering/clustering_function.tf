@@ -3,6 +3,8 @@ resource "aws_lambda_function" "clustering_lambda" {
   role          = aws_iam_role.clustering_lambda_iam.name
   package_type  = var.clustering_package_type
   image_uri     = data.local_file.clustering_lambda_uri_file.content
+  memory_size   = var.clustering_lambda_memory_size
+  timeout       = var.clustering_lambda_timeout
 }
 
 data "local_file" "clustering_lambda_uri_file" {

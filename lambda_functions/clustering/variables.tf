@@ -17,3 +17,13 @@ variable "clustering_lambda_iam_role_arn" {
   default = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
   type = string
 }
+
+variable "clustering_lambda_memory_size" {
+  default = 2048
+  type = number
+}
+
+variable "clustering_lambda_timeout" {
+  default = 900
+  type = number
+}

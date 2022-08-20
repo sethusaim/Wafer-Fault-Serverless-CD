@@ -3,6 +3,8 @@ resource "aws_lambda_function" "model_prediction_lambda" {
   role          = aws_iam_role.model_prediction_lambda_iam.arn
   package_type  = var.model_prediction_package_type
   image_uri     = data.local_file.model_prediction_lambda_uri_file.content
+  memory_size = var.model_prediction_lambda_memory_size
+  timeout = var.model_prediction_lambda_timeout
 }
 
 data "local_file" "model_prediction_lambda_uri_file" {
