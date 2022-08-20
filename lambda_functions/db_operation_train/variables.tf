@@ -8,7 +8,12 @@ variable "db_operation_train_package_type" {
   type    = string
 }
 
-variable "lambda_iam_role_name" {
+variable "db_operation_train_lambda_iam_role_name" {
   default = "lambda_iam_role"
   type    = string
+}
+
+variable "db_operation_train_lambda_iam_role_arn" {
+  default = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+  type = string
 }
