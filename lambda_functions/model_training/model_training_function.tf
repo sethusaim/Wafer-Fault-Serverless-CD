@@ -3,8 +3,8 @@ resource "aws_lambda_function" "model_training_lambda" {
   role          = aws_iam_role.model_training_lambda_iam.arn
   package_type  = var.model_training_package_type
   image_uri     = data.local_file.model_training_lambda_uri_file.content
-  memory_size = var.model_training_lambda_memory_size
-  timeout = var.model_training_lambda_timeout
+  memory_size   = var.model_training_lambda_memory_size
+  timeout       = var.model_training_lambda_timeout
 }
 
 data "local_file" "model_training_lambda_uri_file" {

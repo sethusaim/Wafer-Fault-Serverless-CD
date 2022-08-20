@@ -15,15 +15,15 @@ variable "pred_data_validation_lambda_iam_role_name" {
 
 variable "pred_data_validation_lambda_iam_role_arn" {
   default = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
-  type = string
+  type    = string
 }
 
 variable "pred_data_validation_lambda_memory_size" {
   default = 2048
-  type = number
+  type    = number
 }
 
 variable "pred_data_validation_lambda_timeout" {
   default = 900
-  type = number
+  type    = number
 }

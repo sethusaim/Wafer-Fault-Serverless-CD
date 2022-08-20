@@ -3,8 +3,8 @@ resource "aws_lambda_function" "load_prod_model_lambda" {
   role          = aws_iam_role.load_prod_model_lambda_iam.arn
   package_type  = var.load_prod_model_package_type
   image_uri     = data.local_file.load_prod_model_lambda_uri_file.content
-  memory_size = var.load_prod_model_lambda_memory_size
-  timeout = var.load_prod_model_lambda_timeout
+  memory_size   = var.load_prod_model_lambda_memory_size
+  timeout       = var.load_prod_model_lambda_timeout
 }
 
 data "local_file" "load_prod_model_lambda_uri_file" {
