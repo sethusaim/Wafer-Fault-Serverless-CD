@@ -8,7 +8,12 @@ variable "preprocessing_pred_package_type" {
   type    = string
 }
 
-variable "lambda_iam_role_name" {
+variable "preprocessing_pred_lambda_iam_role_name" {
   default = "lambda_iam_role"
   type    = string
+}
+
+variable "preprocessing_pred_lambda_iam_role_arn" {
+  default = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+  type = string
 }
