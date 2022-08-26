@@ -8,5 +8,5 @@ resource "aws_lambda_function" "pred_data_validation_lambda" {
 }
 
 data "local_file" "pred_data_validation_lambda_uri_file" {
-  filename = "./lambda_function_manifests/wafer_pred_data_validation_uri.txt"
+  filename = "./lambda_function_manifests/wafer_raw_pred_data_validation_uri.txt"
 }

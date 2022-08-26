@@ -6,6 +6,7 @@ terraform {
   }
 }
 
+
 module "clustering_lambda_function" {
   source = "./lambda_functions/clustering"
 }
@@ -15,7 +16,7 @@ module "data_transform_pred_function" {
 }
 
 module "data_transform_train_function" {
-  souce = "./lambda_functions/data_transform_train"
+  source = "./lambda_functions/data_transform_train"
 }
 
 module "db_operation_pred_function" {
