@@ -5,6 +5,7 @@ new_tag = environ["DOCKERTAG"]
 
 file_name = join("lambda_function_manifests", environ["COMP_FILE"])
 
+
 def read_text():
     try:
         with open(file_name, "r") as f:
